@@ -4024,7 +4024,7 @@ static void rechargeItems(unsigned long categories) {
         }
         if (y) {
             i++;
-            strcat(buf, y == 1 ? "wand" : "wands");
+            strcat(buf, y == 1 ? "staff" : "staffs");
             if (i == categoryCount - 1) {
                 strcat(buf, " and ");
             } else if (i <= categoryCount - 2) {
