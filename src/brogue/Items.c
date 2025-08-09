@@ -1523,15 +1523,15 @@ void itemName(item *theItem, char *root, boolean includeDetails, boolean include
             break;
         case SCROLL:
             if (scrollTable[theItem->kind].identified || rogue.playbackOmniscience) {
-                sprintf(root, "scroll%s of %s", pluralization, scrollTable[theItem->kind].name);
+                sprintf(root, "piyut%s of %s", pluralization, scrollTable[theItem->kind].name);
             } else if (scrollTable[theItem->kind].called) {
-                sprintf(root, "scroll%s called %s%s%s",
+                sprintf(root, "piyut%s called %s%s%s",
                         pluralization,
                         purpleEscapeSequence,
                         scrollTable[theItem->kind].callTitle,
                         baseEscapeSequence);
             } else {
-                sprintf(root, "scroll%s entitled %s\"%s\"%s",
+                sprintf(root, "piyut%s entitled %s\"%s\"%s",
                         pluralization,
                         purpleEscapeSequence,
                         scrollTable[theItem->kind].flavor,
@@ -1540,9 +1540,9 @@ void itemName(item *theItem, char *root, boolean includeDetails, boolean include
             break;
         case POTION:
             if (potionTable[theItem->kind].identified || rogue.playbackOmniscience) {
-                sprintf(root, "potion%s of %s", pluralization, potionTable[theItem->kind].name);
+                sprintf(root, "segula%s of %s", pluralization, potionTable[theItem->kind].name);
             } else if (potionTable[theItem->kind].called) {
-                sprintf(root, "potion%s called %s%s%s",
+                sprintf(root, "segula%s called %s%s%s",
                         pluralization,
                         purpleEscapeSequence,
                         potionTable[theItem->kind].callTitle,
@@ -1557,7 +1557,7 @@ void itemName(item *theItem, char *root, boolean includeDetails, boolean include
             break;
         case WAND:
             if (wandTable[theItem->kind].identified || rogue.playbackOmniscience) {
-                sprintf(root, "wand%s of %s",
+                (rsprintfoot, "wand%s of %s",
                         pluralization,
                         wandTable[theItem->kind].name);
             } else if (wandTable[theItem->kind].called) {
