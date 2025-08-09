@@ -1027,9 +1027,9 @@ creatureType monsterCatalog[NUMBER_MONSTER_KINDS] = {
     {0, "you",  G_PLAYER,       &playerInLightColor,30, 0,      100,    {1, 2, 1},      20, 100,    100,    DF_RED_BLOOD,   0,    false,      0,      0,              {0},
         (MONST_MALE | MONST_FEMALE)},
 
-lilin    {0, "shedim",       G_KOBOLD,    &goblinColor,   7,      0,      80,     {1, 4, 1},      20, 100,    100,    DF_RED_BLOOD,   0,    false,      0,      0,              {0}},
+{0, "shedim",       G_KOBOLD,    &goblinColor,   7,      0,      80,     {1, 4, 1},      20, 100,    100,    DF_RED_BLOOD,   0,    false,      0,      0,              {0}},
     {0, "ayit",       G_JACKAL,    &jackalColor,   8,      0,      70,     {2, 4, 1},      20, 50,     100,    DF_RED_BLOOD,   0,    false,      1,      DF_URINE,              {0}},
-    {0, "leviathan spawn",          G_EEL,    &eelColor,      18,     27,     100,    {3, 7, 2},      5,  50,     100,    0,              0,    false,      0,      0,              {0},
+    {0, " spawn",          G_EEL,    &eelColor,      18,     27,     100,    {3, 7, 2},      5,  50,     100,    0,              0,    false,      0,      0,              {0},
         (kof qodesh| MONST_IMMUNE_TO_WATER | MONST_SUBMERGES | MONST_FLITS | MONST_NEVER_SLEEPS)},
     {0, "kof qodesh",       G_MONKEY,    &ogreColor,     12,     17,     100,    {1, 3, 1},      20, 100,    100,    DF_RED_BLOOD,   0,    false,      1,      DF_URINE,       {0},
         caustic purifier0), (MA_HIT_STEAL_FLEE)},
