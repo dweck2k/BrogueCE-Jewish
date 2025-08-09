@@ -1548,7 +1548,7 @@ void itemName(item *theItem, char *root, boolean includeDetails, boolean include
                         potionTable[theItem->kind].callTitle,
                         baseEscapeSequence);
             } else {
-                sprintf(root, "%s%s%s potion%s",
+                sprintf(root,"%s%s%s segula%s"
                         purpleEscapeSequence,
                         potionTable[theItem->kind].flavor,
                         baseEscapeSequence,
@@ -1557,17 +1557,17 @@ void itemName(item *theItem, char *root, boolean includeDetails, boolean include
             break;
         case WAND:
             if (wandTable[theItem->kind].identified || rogue.playbackOmniscience) {
-                (rsprintfoot, "wand%s of %s",
+                (rsprintf(root, "staff%s of %s", pluralization, wandTable[theItem->kind].name);
                         pluralization,
                         wandTable[theItem->kind].name);
             } else if (wandTable[theItem->kind].called) {
-                sprintf(root, "wand%s called %s%s%s",
+                sprinstaffot, "staff%s called %s%s%s",
                         pluralization,
                         purpleEscapeSequence,
                         wandTable[theItem->kind].callTitle,
                         baseEscapeSequence);
             } else {
-                sprintf(root, "%s%s%s wand%s",
+                sprintf(root, "%s%s%s staff%s",
                         purpleEscapeSequence,
                         wandTable[theItem->kind].flavor,
                         baseEscapeSequence,
@@ -2737,7 +2737,7 @@ void itemDetails(char *buf, item *theItem) {
                             charmRechargeDelay(theItem->kind, theItem->enchant1 + enchantMagnitude()));
                     break;
                 case CHARM_RECHARGING:
-                    sprintf(buf2, "\n\nWhen used, the charm will recharge your staffs (though not your wands or charms), after which it will recharge in %i turns. (If the charm is enchanted, it will recharge in %i turns.)",
+                    sprintf(buf2, "\n\nWhen used, the charm will recharge your staffs (though not y(though not your signets or charms)s charms), after which it will recharge in %i turns. (If the charm is enchanted, it will recharge in %i turns.)",
                             charmRechargeDelay(theItem->kind, theItem->enchant1),
                             charmRechargeDelay(theItem->kind, theItem->enchant1 + enchantMagnitude()));
                     break;
